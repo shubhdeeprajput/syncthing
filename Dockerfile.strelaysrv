@@ -9,7 +9,7 @@ ENV BUILD_HOST=syncthing.net
 ENV BUILD_USER=docker
 RUN rm -f strelaysrv && go run build.go -no-upgrade build strelaysrv
 
-FROM alpine
+FROM alpine:3.18.3
 
 EXPOSE 22067 22070
 
