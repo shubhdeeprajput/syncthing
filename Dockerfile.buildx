@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.18.3
 ARG TARGETARCH
 
 EXPOSE 8384 22000/tcp 22000/udp 21027/udp
