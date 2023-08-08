@@ -9,7 +9,7 @@ ENV BUILD_HOST=syncthing.net
 ENV BUILD_USER=docker
 RUN rm -f stdiscosrv && go run build.go -no-upgrade build stdiscosrv
 
-FROM alpine
+FROM alpine:3.18.3
 
 EXPOSE 19200 8443
 
