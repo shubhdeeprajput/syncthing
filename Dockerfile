@@ -9,7 +9,7 @@ ENV BUILD_HOST=syncthing.net
 ENV BUILD_USER=docker
 RUN rm -f syncthing && go run build.go -no-upgrade build syncthing
 
-FROM alpine
+FROM alpine:3.18.3
 
 EXPOSE 8384 22000/tcp 22000/udp 21027/udp
 
